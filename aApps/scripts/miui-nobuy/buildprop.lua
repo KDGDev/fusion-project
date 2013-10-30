@@ -1,0 +1,17 @@
+setProp('ro.build.user', getUserName())
+setProp('ro.build.host', getHostName())
+setProp('persist.sys.timezone', timezone)
+setProp('ro.tt.version', 'user-2013')
+setProp('ro.build.type', 'user')
+setProp('ro.build.tags', 'release-keys')
+setProp('ro.build.date', getBuildDate())
+setProp('ro.repo.build', 'kdgdev')
+if not noota then 
+	setProp('ro.product.mod_device', getProp('ro.product.device'))
+end
+setProp('ro.build.date.utc', getUTCBuildDate())
+setProp('ro.product.locale.language', getLanguage())
+setProp('ro.product.locale.region', getRegion())
+setProp('dalvik.vm.dexopt-flags', 'm=y')
+setProp('persist.adb.notify', '0')
+setProp('pm.sleep_mode', '3')
